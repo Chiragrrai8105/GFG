@@ -6,16 +6,20 @@ class divide {
         while(n1>0)
         {
             int a=n1%10;
-            if(n%a==0 && a!=0)
+            if(a==0)
+            {
+            continue;
+            }    
+            else if (n%a==0)
             {
                 count++;
             }
-            n1/=10;
-        }    
-        return count;
+            n1/=10; 
     }
+    return count;
+}
     public static void main(String[] args)
     {
-        System.out.println(evenDivides(20));
+        System.out.println(evenlyDivides(20));
     }
 }
