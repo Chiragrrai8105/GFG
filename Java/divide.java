@@ -6,7 +6,7 @@ class divide {
         while(n1>0)
         {
             int a=n1%10;
-              n1/=10;
+            n1/=10;
             if(a==0)
             {
             continue;
