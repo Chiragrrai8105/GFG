@@ -8,14 +8,15 @@ class stringcheck {
         {
             for(int i=0;i<s1.length()-1;i++)
             {
+                boolean bool=false;
                 for(int j=0;j<s2.length()-1;j++)
                 {
                     if(s1.charAt(i)==s2.charAt(j))
                     {
-                          return true;
+                        bool=true;
                     }
-                  
                 }
+                
             }
         }
         return false;
