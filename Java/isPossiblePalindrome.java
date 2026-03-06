@@ -1,6 +1,6 @@
 class isPossiblePalindrome {
 
-    public int demo(String s, int K) {
+    public int demo(String s,int K) {
         String n=s;
         for(int j=0;j<K;j++)
         {
