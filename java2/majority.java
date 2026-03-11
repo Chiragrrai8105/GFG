@@ -1,20 +1,21 @@
 class majority {
-    public static void  main(String[] args) {
-        int count=0;
+    public static void main(String[] args) {
+        int nums[]={3,2,3,4,4,4,4,4};
         for(int i=0;i<nums.length;i++)
         {
-            for(int j=i+1;j<nums.length;j++)
+            int count=0;
+            for(int j=0;j<nums.length;j++)
             {
                 if(nums[i]==nums[j])
                 {
                     count++;
                 }
             }
-            if(count>(nums.length/2))
+            if(count>nums.length/2)
             {
-                return nums[i];
+                System.out.println(nums[i]);
+                break;
             }
         }
-        return 0;
     }
 }
