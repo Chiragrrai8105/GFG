@@ -1,6 +1,6 @@
-class isPossiblePalindrome {
+public class isPossiblePalindrome {
 
-    public int demo(String s,int K) {
+    public static int demo(String s,int K) {
         String n=s;
         for(int j=0;j<K;j++)
         {
@@ -16,5 +16,10 @@ class isPossiblePalindrome {
             a--;
         }
         return 1;
+    }
+    public static void main(String[] args) {
+        String s="abac";
+        int K=2;
+        System.out.println(demo(s,K));
     }
 }
