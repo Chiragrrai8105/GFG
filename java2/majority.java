@@ -1,6 +1,6 @@
 class majority {
     public static void main(String[] args) {
-        int nums[]={3,2,3,4,4,4,4,4};
+        int nums[]={8,8,7,7,7};
         for(int i=0;i<nums.length;i++)
         {
             int count=0;
