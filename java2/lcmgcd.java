@@ -7,12 +7,10 @@ class lcmgcd {
             int temp=y;
             y=x%y;
             x=temp;
-        
         }
         int gcd=x;
         int lcm=(a/gcd)*b;
         
         return new int[]{lcm,gcd};
     }
-    
 }
