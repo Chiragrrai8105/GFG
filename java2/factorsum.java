@@ -1,6 +1,7 @@
 class factorsum {
-    static static void main isPerfect(int n) {
-        int sum==0;
+    public static void main(String[] args) {
+        int sum=0;
+        int n=7;
         for(int i=1;i<n;i++)
         {
             if(n%i==0)
@@ -10,8 +11,10 @@ class factorsum {
         }
         if(sum==n)
         {
-            return true;
+            System.out.println("true");
         }
-        return false;
+        else{
+            System.out.println("false");
+        }
     }
 }
