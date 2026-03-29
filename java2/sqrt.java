@@ -1,19 +1,12 @@
-class sqrt{
+class Solution {
     int floorSqrt(int n) {
-        for(int i=2;i<n/2;i++)
+        int a=0;
+        if(n==1||n==0)
+        return 1;
+        for(int i=1;i*i<=n;i++)
         {
-            if(i*i==n)
-            {
-                return i;
-            }
+            a=i;
         }
-        for(int i=0;i<n/2;i++)
-        {
-            if(i*i>n)
-            {
-                int a=i-1;
-            }
-        }
-        return a;
+       return a;
     }
 }
