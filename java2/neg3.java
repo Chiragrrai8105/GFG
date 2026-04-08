@@ -4,18 +4,25 @@ public class neg3{
     int i=1,count=0,N=25;
             while(i<=N)
             {
-                while(i<0)
+                int j=i,a=0;
+                while(j>0)
                 {
-                    int num=i&10;
+                    int num=j%10;
                     if(num==3)
                     {
+                        a=1;
                         break;
                     }
                     else
                     {
-                        i/=10;
+                        j/=10;
                     }
                 }
+                if(a==0)
+                {
+                    count++;
+                }
+                i++;
             }
             System.out.println(count);
     }
